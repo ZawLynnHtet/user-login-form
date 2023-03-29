@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><i class="bi bi-person-circle"></i>  <span class="profile">Profile</span></div>
+        <nav class="navigation">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <button class="login-btn">Login</button>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <i class="bi bi-x close"></i>
+
+        <div class="form-box login">
+            <h2>Login</h2>
+
+            <div class="input-box">
+                <span><i class="bi bi-envelope-at-fill"></i></span>
+                <input type="text" required>
+                <label>Email</label>
+            </div>
+
+            <div class="input-box">
+                <span><i class="bi bi-lock-fill"></i></span>
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+
+            <div class="remember-forget">
+                <label><input type="checkbox" id="check"> Remember</label>
+                <a href="#">Forget Password</a>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+            <div class="login-register">
+                <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+            </div>
+        </div>
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+
+            <div class="input-box">
+                <span><i class="bi bi-person-fill"></i></span>
+                <input type="text" required>
+                <label>Username</label>
+            </div>
+
+            <div class="input-box">
+                <span><i class="bi bi-envelope-at-fill"></i></span>
+                <input type="text" required>
+                <label>Email</label>
+            </div>
+
+            <div class="input-box">
+                <span><i class="bi bi-lock-fill"></i></span>
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+
+            <div class="remember-forget">
+                <label><input type="checkbox" id="check"> I agree to the terms & conditions</label>
+            </div>
+
+            <button type="submit" class="btn">Register</button>
+
+            <div class="login-register">
+                <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
